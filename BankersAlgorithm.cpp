@@ -40,7 +40,7 @@ class BankersAlgorithm{
 				}
 			} 
 			int counter=0;
-    		for (int k=0;k<process;k++){ 
+    		for (int k=0;k<resource;k++){ 
         		for(int i=0;i<process;i++){ 
             		if(finish[i]==0){ 
                 		int flag=0; 
@@ -62,7 +62,7 @@ class BankersAlgorithm{
 			if(finish[i]==1)
 				cout<<"Safe Sequence"<<endl;
 			break;
-			if(finish[i]!=0)	
+			if(finish[i]==0)	
 				cout<<"Not a Safe Sequence"<<endl;
 			break;	
 		}			
